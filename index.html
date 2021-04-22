@@ -1,20 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
-    <title>Bootstrap npm starter</title>
-  </head>
-  <body>
 
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-      <div class="container">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/starter.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Bootstrap npm starter</title>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/img/logo.svg" width="" height="40" alt="">
       </a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -36,56 +40,175 @@
           </li>
         </ul>
       </div>
+    </div>
+  </nav>
+  <!-- Hero section -->
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide slide-1" data-title="Slide One" data-subtitle="This is a slide one">
+        <img src="/assets/img/hero-1.jpg" alt="">
       </div>
-    </nav>
-    <div style="height:250px"></div>
-    <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Collapsible Group Item #1
-            </button>
-          </h2>
-        </div>
-       
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
-          </div>
-        </div>
+      <div class="swiper-slide slide-2" data-title="Slide Two" data-subtitle="This is a slide two"></div>
+      <div class="swiper-slide slide-3" data-title="Slide Three" data-subtitle="This is a slide three"></div>
+    </div>
+    <!-- Slide captions -->
+    <div class="slide-captions"></div>
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <section id="swiper-nav">
+    <div class="container-fluid" style="background-color: grey;">
+    <div class="row justify-content-md-center">
+      <div class="col-sm col-lg-3">
+        <h3>Flight Academy</h3>
+        <p>This is a breaf info to slide</p>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Collapsible Group Item #2
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            Some placeholder content for the second accordion panel. This panel is hidden by default.
-          </div>
-        </div>
+      <div class="col-sm col-lg-3">
+        <h3>Dry lease</h3>
+        <p>This is a breaf info to slide</p>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Collapsible Group Item #3
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-          </div>
+      <div class="col-sm col-lg-3">
+        <h3>Carbon neutral</h3>
+        <p>This is a breaf info to slide</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>About</h2>
+          <p>Here we would have 3-5 sentences about company. Something about reasons to create these center, future plans, who is behind, how we will tkae care of students and so on ... A words that are not in OUR VALUES section. Its kind a welcoming important breaf company introduction. Its a new, unknown center so this information should be at top, later after its become more known this will bemoved to another page.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
-  </body>
+  <!-- Simulation centre -->
+  <section id="pricelist" class="slice mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="headline font-weight-bolder my-4 my-md-5">
+                Simulation centre
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div id="priceitems" class="row row-cols-1 row-cols-lg-4 justify-content-center px-4">
+              <!--Pars-data-steps-->
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script type="module" src="assets/js/starter.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Data parsing -->
+  <script>
+    const priceblock = [
+    {
+      order: 1,
+      img: "cessna172.jpg",
+      name: "Cessna 172RG",
+      desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
+      link: "#",
+    },
+    {
+      order: 2,
+      img: "baron58.jpg",
+      name: "Beechcraft Baron 58",
+      desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
+      link: "#",
+    },
+    {
+      order: 3,
+      img: "kingairb200.jpg",
+      name: "Beechcraft King Air B200",
+      desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
+      link: "#",
+    },
+    ];
+    function cardTemplatePrice(priceitem) {
+      return `
+      <div class="col mb-4">
+          <div class="card text-center shadow-lg h-100">
+            <img src="/assets/img/${priceitem.img}" class="card-img-top" alt="">
+            <div class="card-header">${priceitem.name}</div>
+              <div class="card-body ">
+                <h5 class="card-title text-primary">${priceitem.name}</h5>
+                <p class="card-text">${priceitem.desc}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    }
+
+    document.getElementById("priceitems").innerHTML = `
+    ${priceblock.map(cardTemplatePrice).join("")}
+    `
+  </script>
+  
+  
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      speed: 1200,
+      autoplay: { delay: 5000, },
+
+      // If we need pagination
+      pagination: {
+
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          // Slide captions
+          var swiper = this;
+          var slideTitle =
+            $(swiper.slides[swiper.activeIndex]).attr("data-subtitle");
+          var slideSubtitle =
+            $(swiper.slides[swiper.activeIndex]).attr("data-subtitle");
+          $(".slide-captions").html(function () {
+            return "<h2 class='current-title'>" + slideTitle + "</h2>" +
+              "<h4 class='current-subtitle'>" + slideSubtitle + "</h4>";
+          });
+        }
+      }
+      });
+  </script>
+
+</body>
+
 </html>
