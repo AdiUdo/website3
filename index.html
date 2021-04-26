@@ -43,8 +43,11 @@
     </div>
   </nav>
   <!-- Hero section -->
+  <section id="hero">
+    <div class="container-fluid p-0">
+  
   <!-- Slider main container -->
-  <div class="swiper-container">
+  <div class="swiper-container swiper-1">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -67,24 +70,26 @@
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
-
+  </section>
   <section id="swiper-nav">
     <div class="container-fluid" style="background-color: grey;">
-    <div class="row justify-content-md-center">
-      <div class="col-sm col-lg-3">
-        <h3>Flight Academy</h3>
-        <p>This is a breaf info to slide</p>
-      </div>
-      <div class="col-sm col-lg-3">
-        <h3>Dry lease</h3>
-        <p>This is a breaf info to slide</p>
-      </div>
-      <div class="col-sm col-lg-3">
-        <h3>Carbon neutral</h3>
-        <p>This is a breaf info to slide</p>
+      <div class="row justify-content-md-center">
+        <div class="col-sm col-lg-3">
+          <h3>Flight Academy</h3>
+          <p>This is a breaf info to slide</p>
+        </div>
+        <div class="col-sm col-lg-3">
+          <h3>Dry lease</h3>
+          <p>This is a breaf info to slide</p>
+        </div>
+        <div class="col-sm col-lg-3">
+          <h3>Carbon neutral</h3>
+          <p>This is a breaf info to slide</p>
+        </div>
       </div>
     </div>
-    </div>
+
+  </div>
   </section>
 
   <!-- About section -->
@@ -93,7 +98,10 @@
       <div class="row">
         <div class="col text-center">
           <h2>About</h2>
-          <p>Here we would have 3-5 sentences about company. Something about reasons to create these center, future plans, who is behind, how we will tkae care of students and so on ... A words that are not in OUR VALUES section. Its kind a welcoming important breaf company introduction. Its a new, unknown center so this information should be at top, later after its become more known this will bemoved to another page.</p>
+          <p>Here we would have 3-5 sentences about company. Something about reasons to create these center, future
+            plans, who is behind, how we will tkae care of students and so on ... A words that are not in OUR VALUES
+            section. Its kind a welcoming important breaf company introduction. Its a new, unknown center so this
+            information should be at top, later after its become more known this will bemoved to another page.</p>
         </div>
       </div>
     </div>
@@ -101,20 +109,77 @@
 
   <!-- Simulation centre -->
   <section id="pricelist" class="slice mb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h2 class="headline font-weight-bolder my-4 my-md-5">
-                Simulation centre
-              </h2>
-            </div>
-          </div>
-          <div class="row">
-            <div id="priceitems" class="row row-cols-1 row-cols-lg-4 justify-content-center px-4">
-              <!--Pars-data-steps-->
-            </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="headline font-weight-bolder my-4 my-md-5">Simulation centre</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div id="priceitems" class="row row-cols-1 row-cols-lg-4 justify-content-center px-4">
+          <!--Parse-data-priceitems-->
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- Benefits -->
+  <section id="benefits">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="headline font-weight-bolder my-4 my-md-5">Full service</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div id="benefititems" class="d-flex flex-row">
+          <!-- Parse data benefititems-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+
+  <section id="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="headline font-weight-bolder my-4 my-md-5">Location</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 ">
+          <!-- Slider main container -->
+          <div class="swiper-container swiper-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src='/assets/img/kosice-1.jpg'
+                alt='slide 1' />
+              </div>
+             <div class="swiper-slide">
+                <img src='/assets/img/kosice-1.jpg'
+                alt='slide 2' />
+              </div>
+                   <div class="swiper-slide">
+                <img src='/assets/img/kosice-1.jpg'
+                alt='slide 3' />
+              </div>              
+              
+          </div>
+          
+        </div>
+        
+        </div>
+        <div class="col-12 col-md-6">
+          <p>Here we say something about Kosice, so that foreign customers get to know waht to do in a spare time. On the left there will be rotating some nice pictures (besides sightseeing also night life pictures) of Kosice. If they want more information, we could put a button to navigate to local tourist website, something like what to do here...</p>
+          <button type="button" class="btn btn-primary rounded-pill">More info</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+
   </section>
 
 
@@ -126,27 +191,27 @@
   <!-- Data parsing -->
   <script>
     const priceblock = [
-    {
-      order: 1,
-      img: "cessna172.jpg",
-      name: "Cessna 172RG",
-      desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
-      link: "#",
-    },
-    {
-      order: 2,
-      img: "baron58.jpg",
-      name: "Beechcraft Baron 58",
-      desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
-      link: "#",
-    },
-    {
-      order: 3,
-      img: "kingairb200.jpg",
-      name: "Beechcraft King Air B200",
-      desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
-      link: "#",
-    },
+      {
+        order: 1,
+        img: "cessna172.jpg",
+        name: "Cessna 172RG",
+        desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
+        link: "#",
+      },
+      {
+        order: 2,
+        img: "baron58.jpg",
+        name: "Beechcraft Baron 58",
+        desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
+        link: "#",
+      },
+      {
+        order: 3,
+        img: "kingairb200.jpg",
+        name: "Beechcraft King Air B200",
+        desc: "Here we need one sentence that will help visitor to choose which flight simulator is this. ",
+        link: "#",
+      },
     ];
     function cardTemplatePrice(priceitem) {
       return `
@@ -168,20 +233,57 @@
     ${priceblock.map(cardTemplatePrice).join("")}
     `
   </script>
-  
-  
+  <!---Data parsing - benefits -->
   <script>
-    var mySwiper = new Swiper('.swiper-container', {
+    const benefitblock = [
+      {
+        order: 1,
+        img: "bell.svg",
+        name: "Accomodation booking",
+        desc: "Here we brieafly describe benefit that our customer gets as a bonus to our main services",
+      },
+      {
+        order: 2,
+        img: "bell.svg",
+        name: "Transport pickup",
+        desc: "Here we brieafly describe benefit that our customer gets as a bonus to our main services",
+      },
+      {
+        order: 3,
+        img: "bell.svg",
+        name: "Another service",
+        desc: "Here we brieafly describe benefit that our customer gets as a bonus to our main services",
+      },
+    ];
+
+    function cardTemplatebenefit(benefititem) {
+      return `
+    <div class="">
+      <div class="row justify-content-center">
+        <div class="col-4 text-center">
+          <img src="/assets/img/${benefititem.img}" class="" alt="">
+        </div>
+    </div>
+    <h2 class="text-center">${benefititem.name}</h2>
+    <p class="text-center">${benefititem.desc}</p>
+    </div>
+    `
+    }
+
+    document.getElementById("benefititems").innerHTML = `
+  ${benefitblock.map(cardTemplatebenefit).join("")}
+  `
+  </script>
+
+
+
+  <script>
+    var swiper = new Swiper('.swiper-1', {
       // Optional parameters
       direction: 'horizontal',
       loop: false,
       speed: 1200,
       autoplay: { delay: 5000, },
-
-      // If we need pagination
-      pagination: {
-
-      },
 
       // Navigation arrows
       navigation: {
@@ -206,7 +308,17 @@
           });
         }
       }
-      });
+    });
+  </script>
+  
+  <script>
+    var swiper2 = new Swiper('.swiper-2', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      speed: 1200,
+      autoplay: { delay: 5000, },
+ });
   </script>
 
 </body>

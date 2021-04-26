@@ -1,14 +1,29 @@
 /* Custom css styles */
 
-.swiper-container {
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 1st swiper */
+.swiper-1 {
     width: 100%;
-    height: 80vh;
-  }
+    height: 60vh;
+}
 
+.swiper-2 {
+    width: 100%;
+    height: 100%;
+}
 
-  /* Swiper slides */
+/* Swiper slides */
 .swiper-slide {
 	position: relative;
+}
+
+.swiper-2 img {
+    width: 400px;
+    height: 400px;
 }
 
 .slide-1 {
@@ -53,4 +68,10 @@
 .card-img-top {
     width: 100%;
     
+}
+
+/* benfits */
+
+#benefititems img {
+    height: 45px;
 }
