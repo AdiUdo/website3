@@ -12,19 +12,23 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-    <div class="container">
+  <nav id="#navbar-scroll" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow">
+   
+    <div class="container-fluid">
+   <!-- Logo -->
+    <div class="parallelogram"></div>
       <a class="navbar-brand" href="#">
         <img src="./assets/img/logo.svg" width="" height="40" alt="">
       </a>
+      
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <ul class="nav nav-fill ml-auto d-block d-md-flex h3 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Simulation center</a>
@@ -95,15 +99,19 @@
   <!-- About section -->
   <section id="about" class="py-5">
     <div class="container">
-      <div class="row">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="headline font-weight-bolder my-4 my-md-5">About</h2>
+          </div>
+        </div>
+        <div class="row">
         <div class="col text-center">
-          <h2>About</h2>
           <p>Here we would have 3-5 sentences about company. Something about reasons to create these center, future
             plans, who is behind, how we will tkae care of students and so on ... A words that are not in OUR VALUES
             section. Its kind a welcoming important breaf company introduction. Its a new, unknown center so this
             information should be at top, later after its become more known this will bemoved to another page.</p>
         </div>
-      </div>
+        </div>
     </div>
   </section>
 

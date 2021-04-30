@@ -32,7 +32,21 @@ $enable-shadows: true;
 $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
-$success: #7952b3;
+
+// theme colors
+$primary: #145A7D;
+$secondary: #E05B2A; 
+$success: #16998D;
+
+// fonts
+$font-family-sans-serif: -apple-system, "PT Sans", system-ui, BlinkMacSystemFont, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+// anchors
+$link-color: white;
+
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
@@ -41,7 +55,7 @@ $success: #7952b3;
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
+@import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
@@ -88,3 +102,5 @@ body {
 .bi {
   fill: currentColor;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');

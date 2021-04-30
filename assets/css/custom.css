@@ -90,3 +90,54 @@ body {
     width:100%;
     position:absolute;
 }
+/* nav */ 
+.parallelogram {
+    width: 280px;
+    height: 74px;
+    transform: skew(-20deg);
+    background: white;
+    position: absolute;
+    z-index: 1;
+    left: 25vh;
+  }
+.navbar-brand {
+position: absolute;
+z-index: 2;
+left: 28vh;
+}
+
+/* Identifikacie aktivnej polozky v navigacii */ 
+
+#navbar-scroll .nav-item {
+    position: relative;
+    color: white;
+  }
+  
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)  { 
+    #navbar-scroll .nav-link.active::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: orange;
+      position: absolute;
+      top: -13px;
+      width: 75%;
+    }
+    
+    #navbar-scroll .nav-link::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: orange;
+      position: absolute;
+      top: -13px;
+      width: 0%;
+      transition: all linear 250ms;
+    }
+    
+    #navbar-scroll .nav-link:hover::before {
+      width: 75%;
+    }
+   }
