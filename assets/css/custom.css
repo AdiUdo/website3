@@ -70,7 +70,7 @@ body {
     
 }
 
-/* benfits */
+/* benefits */
 
 #benefititems img {
     height: 45px;
@@ -101,9 +101,16 @@ body {
     left: 25vh;
   }
 .navbar-brand {
-position: absolute;
+position: relative;
+transform: skew(20deg);
 z-index: 2;
-left: 28vh;
+left: 21px;
+top: 7px;
+}
+
+/* Price cards */
+.card-img-cover {
+clip-path: polygon(0% 14%,100% 0%,100% 100%,0% 100%);
 }
 
 /* Identifikacie aktivnej polozky v navigacii */ 

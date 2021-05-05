@@ -16,11 +16,11 @@
    
     <div class="container-fluid">
    <!-- Logo -->
-    <div class="parallelogram"></div>
+    <div class="parallelogram">
       <a class="navbar-brand" href="#">
         <img src="./assets/img/logo.svg" width="" height="40" alt="">
       </a>
-      
+    </div>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -207,23 +207,23 @@
   <!-- Footer-->
   <section id="footer">
     <div class="container-fluid">
-      <div class="row bg-gradient-light">
+      <div class="row bg-primary text-light">
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Links</h5>
 
-          <ul class="list-unstyled mb-0">
+          <ul class="list-unstyled mb-0 text-light">
             <li>
-              <a href="#!" class="text-dark">Link 1</a>
+              <a href="#!" class="text-light">Link 1</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 2</a>
+              <a href="#!" class="text-light">Link 2</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 3</a>
+              <a href="#!" class="text-light">Link 3</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 4</a>
+              <a href="#!" class="text-light">Link 4</a>
             </li>
           </ul>
         </div>
@@ -235,37 +235,16 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-dark">Link 1</a>
+              <a href="#!" class="text-light">Link 1</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 2</a>
+              <a href="#!" class="text-light">Link 2</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 3</a>
+              <a href="#!" class="text-light">Link 3</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-dark">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 4</a>
+              <a href="#!" class="text-light">Link 4</a>
             </li>
           </ul>
         </div>
@@ -277,16 +256,37 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-dark">Link 1</a>
+              <a href="#!" class="text-light">Link 1</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 2</a>
+              <a href="#!" class="text-light">Link 2</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 3</a>
+              <a href="#!" class="text-light">Link 3</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Link 4</a>
+              <a href="#!" class="text-light">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-light">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 4</a>
             </li>
           </ul>
         </div>
@@ -295,7 +295,7 @@
     </div>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2021 Copyright:
-      <a class="text-dark" href="#">Ready 4 Aero</a>
+      <a class="text-light" href="#">Ready 4 Aero</a>
     </div>
   </section>
 
@@ -333,7 +333,8 @@
     function cardTemplatePrice(priceitem) {
       return `
       <div class="col mb-4">
-          <div class="card text-center shadow-lg h-100">
+        <div class="shadow-lg">  
+        <div class="card text-center  h-100 card-img-cover">
             <img src="./assets/img/${priceitem.img}" class="card-img-top" alt="">
             <div class="card-header">${priceitem.name}</div>
               <div class="card-body ">
@@ -342,6 +343,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
       `
     }
