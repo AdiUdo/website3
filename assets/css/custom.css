@@ -5,6 +5,27 @@ body {
     margin: 0px;
 }
 
+/* navigation */
+.nav-item {
+    
+    position: relative;
+}
+
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: #e67204;
+    transform: skew(-20deg);
+}
+
+/* sections */
+
+
+
 /* 1st swiper */
 .swiper-1 {
     width: 100%;

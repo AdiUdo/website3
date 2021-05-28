@@ -26,7 +26,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="nav nav-fill ml-auto d-block d-md-flex h3 text-uppercase">
+        <ul class="nav ml-auto flex-column flex-sm-row flex-fill justify-content-end h3 text-uppercase font-weight-bolder">
           <li class="nav-item">
             <a class="nav-link active" href="#">Home</a>
           </li>
@@ -97,7 +97,7 @@
   </section>
 
   <!-- About section -->
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 my-5">
     <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -116,7 +116,7 @@
   </section>
 
   <!-- Simulation centre -->
-  <section id="pricelist" class="slice mb-5">
+  <section id="pricelist" class="slice my-5">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -124,14 +124,14 @@
         </div>
       </div>
       <div class="row">
-        <div id="priceitems" class="row row-cols-1 row-cols-lg-4 justify-content-center px-4">
+        <div id="priceitems" class="row row-cols-1 row-cols-lg-4 justify-content-center px-4 no-gutters">
           <!--Parse-data-priceitems-->
         </div>
       </div>
     </div>
   </section>
   <!-- Benefits -->
-  <section id="benefits">
+  <section id="benefits" class="py-5 my-5">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -148,7 +148,7 @@
 
   <!-- Location -->
 
-  <section id="location">
+  <section id="location" class="py-5 my-5">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -206,92 +206,80 @@
   </section>
   <!-- Footer-->
   <section id="footer">
-    <div class="container-fluid">
-      <div class="row bg-primary text-light">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0 text-light">
-            <li>
-              <a href="#!" class="text-light">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 4</a>
-            </li>
-          </ul>
+    <footer id="footer">
+      <div class="row bg-primary py-5 text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-4 mt-3">
+                  <h5>Contact</h5>
+                  <hr class="footer" />
+                  <p>
+                    <i class="fas fa-home fa-fw" aria-hidden="true"></i>
+                    Ready 4 aero<br />
+                    <i class="fas fa-home fa-fw text-dark" aria-hidden="true"></i>
+                    Rampová 7, Arerál leteckej fakulty Košice
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+                    lubomir.stanko@r4a.aero
+                  </p>
+                  <p>
+                    <i class="fa fa-mobile fa-fw" aria-hidden="true"></i> 421
+                    902 684 829
+                  </p>
+                  <p>
+                    <i class="fa fa-user fa-fw" aria-hidden="true"></i>Ľubomír Stanko<br />
+                    <i class="fa fa-user fa-fw text-dark" aria-hidden="true"></i>
+                    reservation
+                  </p>
+                </div>
+                <div class="col-10 col-md-4 mt-3">
+                  <h5>Invoice data</h5>
+                  <hr class="footer" />
+                  <p>KOLATERAL, s.r.o.</p>
+                  <p>IČO: 46 136 380</p>
+                  <p>DIČ: 202 324 4619</p>
+                  <p>IČ DPH: SK 202 324 4619</p>
+                  <p>IBAN: SK48 1100 0000 0029 2385 5217</p>
+                </div>
+                <div class="col-10 col-md-2 mt-3">
+                  <h5>Menu</h5>
+                  <hr class="footer" />
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#o-nas">O nás</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#sluzby">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#referencie">Referencie</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#kontakt">Kontakt</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-10 col-md-2 mt-3">
+                  <h5>Ostatné</h5>
+                  <hr class="footer" />
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./gdpr.html">Ochrana súkromia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./autorske-prava.html">Autorské práva</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-light">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-light">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-light">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-light">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
       </div>
+    </footer>
     </div>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2021 Copyright:
@@ -332,13 +320,13 @@
     ];
     function cardTemplatePrice(priceitem) {
       return `
-      <div class="col mb-4">
-        <div class="shadow-lg">  
+      <div class="col shadow-sm">
+        <div class="">  
         <div class="card text-center  h-100 card-img-cover">
             <img src="./assets/img/${priceitem.img}" class="card-img-top" alt="">
             <div class="card-header">${priceitem.name}</div>
               <div class="card-body ">
-                <h5 class="card-title text-primary">${priceitem.name}</h5>
+                <h5 class="card-title text-secondary display-4">${priceitem.name}</h5>
                 <p class="card-text">${priceitem.desc}</p>
               </div>
             </div>

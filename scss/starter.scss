@@ -37,6 +37,7 @@ $border-radius: .4rem;
 $primary: #145A7D;
 $secondary: #E05B2A; 
 $success: #16998D;
+$link-hover-color: #E05B2A;
 
 // fonts
 $font-family-sans-serif: -apple-system, "PT Sans", system-ui, BlinkMacSystemFont, sans-serif !default;
@@ -44,8 +45,15 @@ $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
+// typography
+$display4-size: 2.1rem;
+$display4-weight: 600;
+
 // anchors
 $link-color: white;
+
+//others
+$box-shadow-sm: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;;
 
 
 @import "bootstrap/scss/functions"; // Required
